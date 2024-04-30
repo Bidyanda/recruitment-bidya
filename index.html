@@ -34,7 +34,7 @@
                             <li class="nav-item"><a class="nav-link " href="notice.html">Notice</a></li>
                             <li class="nav-item"><a class="nav-link " href="#">Apply</a></li>
                             <li class="nav-item"><a class="nav-link " href="#">Admitcard</a></li>
-                            <li class="nav-item"><a class="nav-link " href="#">Result</a></li>
+                            <li class="nav-item"><a class="nav-link " href="result.html">Result</a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                         </div>
                         <div class="col-md-6  col-sm-6 ">
                             <div class="card card-default mt-2" id="data-tbl">
-                                <div class="card card-header bg-news m-1">Latest News</div>
+                                <div class="card card-header bg-news m-1 fw-bold">Latest News</div>
                                 <div class="card card-body table-responsive">
                                     <table id="example" class="display table news" style="width:100%;height: 100%;">
                                         <thead>
@@ -147,15 +147,26 @@
                         </div>
                         <div class="col-md-3  col-sm-3">
                             <form class="mt-2" id="login">
-                                <h3>Login Here</h3>
-                                <label for="username">Username</label>
-                                <input type="text" placeholder="Email or Phone" id="username">
+                                <h3 class="mb-4">Login Here</h3>
+                                <label for="username">Username(Registration Number)</label>
+                                <input type="text" placeholder="eg. 1110176501" id="username">
                                 <label for="password">Password</label>
                                 <input type="password" placeholder="Password" id="password">
+                                <div class="row mt-3">
+                                    <div class="col-md-6" id="capcha">
+                                        <span>BiDY7</span>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <span role="button"><svg _ngcontent-ng-c2434723278="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><g _ngcontent-ng-c2434723278="" clip-path="url(#clip0_509_5148)"><path _ngcontent-ng-c2434723278="" d="M16.6108 10.8675C16.4535 12.0675 15.9724 13.202 15.2193 14.1493C14.4662 15.0967 13.4694 15.8211 12.3358 16.245C11.2022 16.6689 9.97465 16.7763 8.78472 16.5555C7.59478 16.3347 6.48739 15.7942 5.5813 14.9919C4.6752 14.1897 4.0046 13.1558 3.6414 12.0014C3.2782 10.8469 3.2361 9.6154 3.51963 8.43884C3.80316 7.26228 4.40162 6.1851 5.25081 5.32281C6.10001 4.46053 7.16792 3.84567 8.34 3.54418C11.5892 2.71085 14.9525 4.38335 16.1942 7.50002" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path><path _ngcontent-ng-c2434723278="" d="M16.6667 3.33337V7.50004H12.5" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path></g><defs _ngcontent-ng-c2434723278=""><clipPath _ngcontent-ng-c2434723278="" id="clip0_509_5148"><rect _ngcontent-ng-c2434723278="" width="20" height="20" fill="white"></rect></clipPath></defs></svg> Refresh</span>
+                                    </div>
+                                </div>
+                                <label for="capcha">Capcha</label>
+                                <input type="text" placeholder="Capcha" id="capcha">
                                 <button class="btns">Log In</button>
                                 <div style="text-align:right;margin-top:20px;">
                                     <span class="text-info">Forgot Password</span><br>
-                                    <span class="text-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor:pointer">New User ? Register Now</span>
+                                    <!-- <span class="text-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor:pointer">New User ? Register Now</span> -->
+                                    <span class=""><a href="/registration/personalDetails.html" class="text-info">New User ? Register Now</a></span>
                                 </div>
                             </form>
                         </div>
@@ -182,7 +193,7 @@
             </div>
         </div>
         <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -231,7 +242,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
         <!-- </main> -->
         <footer class="footer mt-auto py-3 text-muted ">
             <div class="container footer-design">
@@ -257,12 +268,12 @@
                     dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
                 });
             });
-            const myModal = document.getElementById('myModal')
-            const myInput = document.getElementById('myInput')
+            // const myModal = document.getElementById('myModal')
+            // const myInput = document.getElementById('myInput')
             
-            myModal.addEventListener('shown.bs.modal', () => {
-              myInput.focus()
-            })
+            // myModal.addEventListener('shown.bs.modal', () => {
+            //   myInput.focus()
+            // })
         </script>
     </body>
 </html>

@@ -126,7 +126,7 @@ form#login h3{
 
 form#login>label{
     display: block;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
 }
@@ -209,6 +209,7 @@ form#login>input{
 .bg-news{
     background-color: rgb(233 212 150) !important;
 }
+
 .gandhiTxt p {
     font-size: 13px;
     font-style: italic;
@@ -252,4 +253,29 @@ button.nav-link.active {
 button.nav-link {
     margin-bottom: 10px !important;
     border-radius: 5px;
+}
+/* personal details  */
+span#login {
+    border: 1px solid #e97716;
+    border-radius: 22px;
+    padding: 11px 15px 11px 15px;
+    color: #834107;
+    font-weight: bold;
+}
+div#capcha {
+    background-color: #f9f5f5;
+    padding: 10px;
+    margin-left: 3%;
+    width: 47%;
+    border-radius: 4px;
+}
+.col-md-3.steps {
+    background-color: #e3d7b2;
+    height: 100vh;
+    border-radius: 4px;;
+}
+
+.card{
+    --bs-card-border-color: rgb(243 226 226 / 18%) !important;
+    --bs-card-bg: #f9f7ef !important;
 }
