@@ -1,0 +1,800 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body class="d-flex flex-column h-100">
+        <header>
+            <nav class="navbar .navbar-toggler .navbar-collapse .navbar-expand-lg d-none d-lg-block">
+                <div class="container">
+                    <div class="logo">
+                        <a class="" href="/"><img src="/images/hcm_logo.png" class="logo_img"></a>            </div>
+                    <div class="text-left fw-bold head-line">
+                        <span id="name-text">High Court Of Manipur</span><br>
+                        <span id="report-text">HCM Recruitment Board</span><br>
+                        <span id="official-text">(Government of India)</span>
+                    </div>
+                </div>
+            </nav> 
+            <nav class="navbar navbar-expand-lg bg-warning">
+                <div class="container">
+                    <a class="navbar-brand" href="/">HCM Recruitment</a>
+                    <div class="navbar-brand d-lg-none  d-md-none d-xl-none">Digital High Court of Manipur Reports</div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mainmenu" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link " href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="notice.html">Notice</a></li>
+                            <li class="nav-item"><a class="nav-link " href="#">Apply</a></li>
+                            <li class="nav-item"><a class="nav-link " href="#">Admitcard</a></li>
+                            <li class="nav-item"><a class="nav-link " href="#">Result</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- <main role="main" class="flex-shrink-0"> -->
+        <div class="wrapper mb-2">
+            <div class="container">
+                <div class="site-index">
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10  col-sm-10 ">
+                            <div class="card card-default mt-2" >
+                                <div class="card card-header bg-news m-1">Notice</div>
+                                <div class="card card-body table-responsive">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="lda-tab" data-bs-toggle="tab" data-bs-target="#lda" type="button" role="tab" aria-controls="lda" aria-selected="true">LDA</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="copyist-tab" data-bs-toggle="tab" data-bs-target="#copyist" type="button" role="tab" aria-controls="copyist" aria-selected="false">Copyist</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="typist-tab" data-bs-toggle="tab" data-bs-target="#typist" type="button" role="tab" aria-controls="typist" aria-selected="false">Typist</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="law-clerk-tab" data-bs-toggle="tab" data-bs-target="#law-clerk" type="button" role="tab" aria-controls="law-clerk" aria-selected="false">Law Clerks</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pa-tab" data-bs-toggle="tab" data-bs-target="#pa" type="button" role="tab" aria-controls="pa" aria-selected="false">Private Secretary</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="stenographer-tab" data-bs-toggle="tab" data-bs-target="#stenographer" type="button" role="tab" aria-controls="stenographer" aria-selected="false">Stenographer</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="jda-tab" data-bs-toggle="tab" data-bs-target="#jda" type="button" role="tab" aria-controls="jda" aria-selected="false">JA</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="ra-tab" data-bs-toggle="tab" data-bs-target="#ra" type="button" role="tab" aria-controls="ra" aria-selected="false">Research Assitants</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="lda" role="tabpanel" aria-labelledby="lda-tab">
+                                            <!-- LDA  -->
+                                            <table id="example-notice1" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                        <div class="tab-pane fade" id="copyist" role="tabpanel" aria-labelledby="copyist-tab">
+                                            <!-- Copyist  -->
+                                            <table id="example-notice2" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                        <div class="tab-pane fade" id="typist" role="tabpanel" aria-labelledby="typist-tab">
+                                            <!-- Typist  -->
+                                            <table id="example-notice3" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                        <div class="tab-pane fade" id="law-clerk" role="tabpanel" aria-labelledby="law-clerk-tab">
+                                            <!-- Law Clerk  -->
+                                            <table id="example-notice4" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                        <div class="tab-pane fade" id="pa" role="tabpanel" aria-labelledby="pa-tab">
+                                            <!-- Private Secretary  -->
+                                            <table id="example-notice5" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                        <div class="tab-pane fade" id="stenographer" role="tabpanel" aria-labelledby="stenographer-tab">
+                                            <!-- Stenographer  -->
+                                            <table id="example-notice6" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                        <div class="tab-pane fade" id="jda" role="tabpanel" aria-labelledby="jda-tab">
+                                            <!-- Judicial Assistant  -->
+                                            <table id="example-notice7" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                        <div class="tab-pane fade" id="ra" role="tabpanel" aria-labelledby="ra-tab">
+                                            <!-- Research Assistants  -->
+                                            <table id="example-notice8" class="display table table-notice" style="width:100%;height: 100%;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Uploaded Date</th>
+                                                        <th>Examination Name and Details</th>
+                                                        <th>Notice</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Noteice: Regarding OTR and Application Module </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (100 kb)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Launching of new website of Commision </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (120 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Answer Keys of Computer based examaintiaon of paper-I of SSA/UDC Grade Limited Department Competitive Examination 2017 and Paper-II of JSA/LDC Grade Limited Departmental Competitive Examination 2018 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (150 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Constable (Driver) Male in Delhi Police Examination, 2022-Uploading of Detailed marks </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (200 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Corrigendum-I to the Notice of Combined Higher Secondary Level(10+2) Level Examination, 2023 </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (230 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for Driver (10) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (255 KB)</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span  style="font-weight:normal;font-size:9px;">Feb</span><br>
+                                                            <span style="font-weight:bold;font-size:12px;">26</span><br>
+                                                            <span style="font-weight:normal;font-size:9px;">2024</span> 
+                                                        </td>
+                                                        <td>Final Vacancies for LDA (10+2) Level Examination </a></td>
+                                                        <td><a href="images/sample.pdf" download>Click Here<i class="fa-solid fa-file-pdf text-danger"></i> (252 KB)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- end  -->
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    
+  </div>
+        <!-- </main> -->
+        <footer class="footer mt-auto py-3 text-muted ">
+            <div class="container footer-design">
+                <img src="/images/hcm_logo.png" class="logo_img" id="footer">
+                <span> © 2024 <a href="https://hcmimphal.nic.in/">High Court of Manipur.</a> All Rights Reserved</span>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // $(".nav-link").click(function(){
+                //     $(".nav-link").removeClass("active");
+                //     $(this).addClass("active");
+                // });
+                $('#example-notice1').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+                $('#example-notice2').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+                $('#example-notice3').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+                $('#example-notice4').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+                $('#example-notice5').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+                $('#example-notice6').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+                $('#example-notice7').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+                $('#example-notice8').DataTable({
+                    info: false,        // Disable table information display
+                    ordering: false,    // Disable table sorting
+                    paging: true,       // Enable pagination
+                    "pageLength": 10,  // Set the default page length
+                    "searching": false,// Disable search bar
+                    dom: '<"top"i>rt<"bottom"fp><"clear">', // Customize the layout
+                });
+
+            });
+        </script>
+    </body>
+</html>
