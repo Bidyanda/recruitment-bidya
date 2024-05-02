@@ -284,6 +284,10 @@ div#capcha {
 .stepper-content-show{
     display:block;
 }
+button.submit,button.submit:hover,a.submit:hover,a.submit,a.submit:focus,button.submit:focus {
+    background-color: #d1a00c;
+    border: none;
+}
 /* .card{
     --bs-card-border-color: rgb(243 226 226 / 18%) !important;
     --bs-card-bg: #f9f7ef !important;
