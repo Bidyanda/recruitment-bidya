@@ -48,25 +48,26 @@
                         <div class="col-md-3 steps mt-3">
                             <section class="p-4 d-flex justify-content-center w-100">
                                 <ul class="stepper stepper-vertical" data-mdb-stepper-init="" data-mdb-stepper-type="vertical" data-mdb-stepper-initialized="true">
-                                  <li class="stepper-step stepper-completed">
+                                  <!-- <li class="stepper-step stepper-completed"> -->
+                                  <li class="stepper-step stepper-active" id="1">
                                     <div class="stepper-head" tabindex="0">
                                       <span class="stepper-head-icon"> 1 </span>
                                       <span class="stepper-head-text"> Personal Details </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step">
+                                  <li class="stepper-step" id="2">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 2 </span>
                                       <span class="stepper-head-text"> Password Creation </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step">
+                                  <li class="stepper-step" id="3">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 3 </span>
                                       <span class="stepper-head-text"> Additional Details </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step">
+                                  <li class="stepper-step" id="4">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 4 </span>
                                       <span class="stepper-head-text"> Declaration </span>
@@ -78,29 +79,117 @@
                         <div class="col-md-9 steps-body mt-3">
                             <div class="card card-default">
                                 <div class="card card-body">
-                                    <div class="stepper-content py-3 step-1" style="height: 83px;">
-                                        <span>
-                                          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                                          non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
-                                        </span>
-                                    </div>
-                                    <div class="stepper-content py-3 step-2 stepper-content-hide" style="height: 83px;">
-                                        <span>
-                                          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                                          non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
-                                        </span>
-                                    </div>
-                                    <div class="stepper-content py-3 step-3 stepper-content-hide" style="height: 83px;">
-                                        <span>
-                                          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                                          non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
-                                        </span>
-                                    </div>
-                                    <div class="stepper-content py-3 step-4 stepper-content-hide" style="height: 83px;">
-                                        <span>
-                                          Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                                          non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
-                                        </span>
+                                    <div class="stepper-content py-3">
+                                        <h7>One Time Registration</h7>
+                                        <h4>Personal Details</h4>
+                                        <hr>
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <!-- Aadhaar Card Number  -->
+                                            <div class="col-md-12">
+                                              <label for="validationCustom01" class="form-label">1. Aadhaar Card Number</label>
+                                              <input type="text" class="form-control" id="validationCustom01" name="aadhaar_number" value="" required>
+                                              <!-- <div class="valid-feedback">
+                                                Looks good!
+                                              </div> -->
+                                            </div>
+                                            <!-- Candidate Name  -->
+                                            <div class="col-md-12">
+                                              <label for="validationCustom02" class="form-label">2. Candidate Name (As per Matriculation Certificate)</label>
+                                              <input type="text" class="form-control" id="validationCustom02" name="candidate_name" value="" required>
+                                              <!-- <div class="valid-feedback">
+                                                Looks good!
+                                              </div> -->
+                                            </div>
+                                            <!-- Gender  -->
+                                            <div class="col-md-12">
+                                                <label for="validationCustom03" class="form-label">3. Gender</label>
+                                                <select class="form-select" id="validationCustom03" name="gender" required>
+                                                  <option selected disabled value="">--Select Gender--</option>
+                                                  <option value="Male">Male</option>
+                                                  <option value="Female">Female</option>
+                                                  <option value="Transgender">Transgender</option>
+                                                </select>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom04" class="form-label">4. Date of Birth(DD-MM-YYYY)</label>
+                                                <input type="date" class="form-control" id="validationCustom04" name="dob" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom05" class="form-label">5. Father's Name( Father's Name should be same as mentioned in Matriculation Certificate)</label>
+                                                <input type="text" class="form-control" id="validationCustom05" name="father_name" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom06" class="form-label">6. Mother's Name( Mother's Name should be same as mentioned in Matriculation Certificate)</label>
+                                                <input type="text" class="form-control" id="validationCustom06" name="monther_name" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom07" class="form-label">7. Matriculation (10<sup>th</sup> class) Education Board</label>
+                                                <select class="form-select" id="validationCustom07" name="matriculation_board" required>
+                                                    <option selected disabled value="">--Select Education Board--</option>
+                                                    <option value="1">Board of Secondary Education Manipur</option>
+                                                    <option value="2">Central Board of Secondary Education</option>
+                                                  </select>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom07" class="form-label">8. Roll Number(Roll Number should be same as mentioned in Matriculation Certificate)</label>
+                                                <input type="text" class="form-control" id="validationCustom07" name="matriculation_roll_no" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom09" class="form-label">9. Year of Passing</label>
+                                                <input type="text" class="form-control" id="validationCustom09" name="matriculation_year_of_passing" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom10" class="form-label">10. Highest Level of Education Qualification</label>
+                                                <select class="form-select" id="validationCustom10" name="highest_qualification" required>
+                                                    <option selected disabled value="">--Select Qualification--</option>
+                                                    <option value="1">Matriculation</option>
+                                                    <option value="2">Higher Secondary</option>
+                                                    <option value="3">Graduate</option>
+                                                    <option value="4">Post Graduate</option>
+                                                  </select>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom11" class="form-label">11. Candidate's Mobile Number</label>
+                                                <input type="text" class="form-control" id="validationCustom11" name="mobile_number" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                              <div class="col-md-12">
+                                                <label for="validationCustom12" class="form-label">12. Candidate's Email ID</label>
+                                                <input type="email" class="form-control" id="validationCustom12" name="email_id" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                              </div>
+                                            <div class="col-md-12 text-end">
+                                              <button class="btn btn-primary text-capitalize" type="submit">Save & Next</button>
+                                            </div>
+                                        </form> 
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +210,7 @@
                     <div class="container">
                         <div class="row">
                         <div class="col-md-12">
-                            <form class="mt-2" id="login">
+                            <form action="/afterLogin/dashboard.html" method="get" id="login">
                                 <h3>Login Here</h3>
                                 <label for="username">Username(Registration Number)</label>
                                 <input type="text" placeholder="eg. 1110176501" id="username">
@@ -162,7 +251,26 @@
         <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.js"></script>
         <script src="../js/main.js"></script>
         <script>
-           
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+            
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+            
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+            
+                    form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
         </script>
     </body>
 </html>

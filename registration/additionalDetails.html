@@ -2,8 +2,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Personal Details</title>
+        <title>Additional Details</title>
         <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/step.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
@@ -43,8 +44,223 @@
         <div class="wrapper mb-2">
             <div class="container">
                 <div class="site-index">
-                    
-                    
+                    <div class="row">
+                        <div class="col-md-3 steps mt-3">
+                            <section class="p-4 d-flex justify-content-center w-100">
+                                <ul class="stepper stepper-vertical" data-mdb-stepper-init="" data-mdb-stepper-type="vertical" data-mdb-stepper-initialized="true">
+                                  <!-- <li class="stepper-step stepper-completed"> -->
+                                  <li class="stepper-step stepper-completed" id="1">
+                                    <div class="stepper-head" tabindex="0">
+                                      <span class="stepper-head-icon"> 1 </span>
+                                      <span class="stepper-head-text"> Personal Details </span>
+                                    </div>
+                                  </li>
+                                  <li class="stepper-step stepper-completed" id="2">
+                                    <div class="stepper-head">
+                                      <span class="stepper-head-icon"> 2 </span>
+                                      <span class="stepper-head-text"> Password Creation </span>
+                                    </div>
+                                  </li>
+                                  <li class="stepper-step stepper-active" id="3">
+                                    <div class="stepper-head">
+                                      <span class="stepper-head-icon"> 3 </span>
+                                      <span class="stepper-head-text"> Additional Details </span>
+                                    </div>
+                                  </li>
+                                  <li class="stepper-step" id="4">
+                                    <div class="stepper-head">
+                                      <span class="stepper-head-icon"> 4 </span>
+                                      <span class="stepper-head-text"> Declaration </span>
+                                    </div>
+                                  </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-md-9 steps-body mt-3">
+                            <div class="card card-default">
+                                <div class="card card-body">
+                                    <div class="stepper-content py-3">
+                                        <h7>One Time Registration</h7>
+                                        <h4>Additional Details</h4>
+                                        <hr>
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <!-- Category  -->
+                                            <div class="col-md-12">
+                                              <label for="validationCustom01" class="form-label">1. Category</label>
+                                              <select class="form-select" id="validationCustom01" name="category" required>
+                                                <option selected disabled value="">--Select Category--</option>
+                                                <option value="1">General</option>
+                                                <option value="2">OBC</option>
+                                                <option value="3">ST</option>
+                                                <option value="4">SC</option>
+                                              </select>
+                                              <!-- <div class="valid-feedback">
+                                                Looks good!
+                                              </div> -->
+                                            </div>
+                                            <!-- nationality  -->
+                                            <div class="col-md-12">
+                                              <label for="validationCustom02" class="form-label">2. Nationality</label>
+                                              <select class="form-select" id="validationCustom02" name="category" required>
+                                                <option selected disabled value="">--Select Nationality--</option>
+                                                <option value="1">Citizen of India</option>
+                                                <option value="2">Citizen of Myanmar</option>
+                                                <option value="3">Citizen of Nepal</option>
+                                                <option value="4">Citizen of Pakistan</option>
+                                              </select>
+                                              <!-- <div class="valid-feedback">
+                                                Looks good!
+                                              </div> -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom03" class="form-label">3. Visible Identification Marks</label>
+                                                <input type="text" class="form-control" id="validationCustom03" name="identification_mark" value="" required>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom04" class="form-label">4. Are you Person With Benchmark Disability(PwDB)?</label>
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="validationFormCheck1" name="disability" >
+                                                    <label class="form-check-label" for="validationFormCheck1">Yes</label>
+                                                </div>
+                                                <div class="form-check mb-3">
+                                                    <input type="radio" class="form-check-input" id="validationFormCheck2" name="disability" >
+                                                    <label class="form-check-label" for="validationFormCheck2">No</label>
+                                                    <!-- <div class="invalid-feedback">More example invalid feedback text</div> -->
+                                                </div>
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                                <div class="mx-3">
+                                                    <label for="validationCustom05" class="form-label">a. Type of Disability</label>
+                                                    <select class="form-select" id="validationCustom05" name="category" required>
+                                                        <option selected disabled value="">--Select Type--</option>
+                                                        <option value="1">VH</option>
+                                                        <option value="2">HH</option>
+                                                        <option value="3">OH</option>
+                                                        <option value="4">Others</option>
+                                                    </select>
+                                                    <div class="card card-body mt-2">
+                                                        <h4>Note</h4>
+                                                        <ol>
+                                                            <li>VH:Blindness and Low visiion</li>
+                                                            <li>HH:Deaf and hard of hearing</li>
+                                                            <li>OH:Locomotor disability, including crebral palsy, leprosy cured, dwarfism, acid attact, victims, &muscular dystrophy</li>
+                                                            <li>Others: Autism, intellectual disability, specific learning disability & mental illness, multiple disabilities from amongst persons under the above mentioned clauses including deaf-blindness.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="" class="form-label">5. Permanent Address</label><br>
+                                                <div class="mx-3">
+                                                    <label for="validationCustom06" class="form-label">a. Address</label>
+                                                    <textarea class="form-control" id="validationCustom06" name="permanent_address" value="" required></textarea>
+                                                    <label for="validationCustom07" class="form-label">b. State/UT</label>
+                                                    <select class="form-select" id="validationCustom07" name="permanent_address_state" required>
+                                                        <option selected disabled value="">--Select State--</option>
+                                                        <option value="1">Manipur</option>
+                                                        <option value="2">Assam</option>
+                                                        <option value="3">Nagaland</option>
+                                                        <option value="4">Arunachal Pradesh</option>
+                                                        <option value="5">Meghalaya</option>
+                                                        <option value="6">Sikim</option>
+                                                        <option value="7">Tripura</option>
+                                                    </select>
+                                                    <label for="validationCustom08" class="form-label">c. District</label>
+                                                    <select class="form-select" id="validationCustom08" name="parmanent_address_district" required>
+                                                        <option selected disabled value="">--Select District--</option>
+                                                        <option value="1">Bishnupur</option>
+                                                        <option value="2">Chandel</option>
+                                                        <option value="3">Imphal-East</option>
+                                                        <option value="4">Imphal-West</option>
+                                                        <option value="5">Thoubal</option>
+                                                        <option value="6">Churachandapur</option>
+                                                        <option value="7">Tamenglong</option>
+                                                        <option value="8">Kamjong</option>
+                                                        <option value="9">Ukhrul</option>
+                                                        <option value="10">Senapati</option>
+                                                        <option value="11">Noney</option>
+                                                        <option value="12">Kakching</option>
+                                                        <option value="13">Tengnoupal</option>
+                                                        <option value="14">Kangpokpi</option>
+                                                    </select>
+                                                    <label for="validationCustom09" class="form-label">d. Pin Code</label>
+                                                    <input type="text" class="form-control" id="validationCustom09" name="permanent_address_pin_code" value="" required> 
+                                                </div>
+                                                
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="validationCustom10" class="form-label">6. Is Present Address same as Permanent Address?</label><br>
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" id="validationFormCheck3" name="is_present_same_as_permanent" >
+                                                    <label class="form-check-label" for="validationFormCheck2">Yes</label>
+                                                </div>
+                                                <div class="form-check mb-3">
+                                                    <input type="radio" class="form-check-input" id="validationFormCheck4" name="is_present_same_as_permanent" >
+                                                    <label class="form-check-label" for="validationFormCheck3">No</label>
+                                                    <!-- <div class="invalid-feedback">More example invalid feedback text</div> -->
+                                                </div>
+                                                <div class="mx-3">
+                                                    <label for="validationCustom10" class="form-label">a. Address</label>
+                                                    <textarea class="form-control" id="validationCustom10" name="permanent_address" value="" required></textarea>
+                                                    <div>
+                                                        <label for="validationCustom11" class="form-label">b. State/UT</label>
+                                                        <select class="form-select" id="validationCustom11" name="permanent_address_state" required>
+                                                            <option selected disabled value="">--Select State--</option>
+                                                            <option value="1">Manipur</option>
+                                                            <option value="2">Assam</option>
+                                                            <option value="3">Nagaland</option>
+                                                            <option value="4">Arunachal Pradesh</option>
+                                                            <option value="5">Meghalaya</option>
+                                                            <option value="6">Sikim</option>
+                                                            <option value="7">Tripura</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label for="validationCustom12" class="form-label">c. District</label>
+                                                        <select class="form-select" id="validationCustom12" name="parmanent_address_district" required>
+                                                            <option selected disabled value="">--Select District--</option>
+                                                            <option value="1">Bishnupur</option>
+                                                            <option value="2">Chandel</option>
+                                                            <option value="3">Imphal-East</option>
+                                                            <option value="4">Imphal-West</option>
+                                                            <option value="5">Thoubal</option>
+                                                            <option value="6">Churachandapur</option>
+                                                            <option value="7">Tamenglong</option>
+                                                            <option value="8">Kamjong</option>
+                                                            <option value="9">Ukhrul</option>
+                                                            <option value="10">Senapati</option>
+                                                            <option value="11">Noney</option>
+                                                            <option value="12">Kakching</option>
+                                                            <option value="13">Tengnoupal</option>
+                                                            <option value="14">Kangpokpi</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label for="validationCustom13" class="form-label">d. Pin Code</label>
+                                                        <input type="text" class="form-control" id="validationCustom13" name="permanent_address_pin_code" value="" required> 
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- <div class="valid-feedback">
+                                                  Looks good!
+                                                </div> -->
+                                            </div>
+                                            <div class="col-md-12 text-end">
+                                              <button class="btn btn-primary text-capitalize" type="submit">Save & Next</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,7 +276,7 @@
                     <div class="container">
                         <div class="row">
                         <div class="col-md-12">
-                            <form class="mt-2" id="login">
+                            <form action="/afterLogin/dashboard.html" method="get" id="login">
                                 <h3>Login Here</h3>
                                 <label for="username">Username(Registration Number)</label>
                                 <input type="text" placeholder="eg. 1110176501" id="username">
@@ -99,8 +315,28 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.js"></script>
+        <script src="../js/main.js"></script>
         <script>
-           
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+            
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+            
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+            
+                    form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
         </script>
     </body>
 </html>

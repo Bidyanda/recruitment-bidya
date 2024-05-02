@@ -10,6 +10,10 @@ img.logo_img {
 .logo {
     margin-right: 9px;
 }
+label.required::before {
+    content: "* ";
+    color: red; /* You can adjust the color as needed */
+}
 #report-text {
     /* font-family: "Algerian", Algerian, serif; */
     /* color: #784704; */
@@ -271,11 +275,16 @@ div#capcha {
 }
 .col-md-3.steps {
     background-color: #e3d7b2;
-    height: 100vh;
+    /* height: 100vh; */
     border-radius: 4px;;
 }
-
-.card{
+.stepper-content-hide{
+    display:none;
+}
+.stepper-content-show{
+    display:block;
+}
+/* .card{
     --bs-card-border-color: rgb(243 226 226 / 18%) !important;
     --bs-card-bg: #f9f7ef !important;
-}
+} */
