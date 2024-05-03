@@ -83,7 +83,7 @@
                                         <h7>One Time Registration</h7>
                                         <h4>Additional Details</h4>
                                         <hr>
-                                        <form class="row g-3 needs-validation" novalidate>
+                                        <form action="/registration/declaration.html" method="get" class="row g-3 needs-validation" novalidate>
                                             <!-- Category  -->
                                             <div class="col-md-12">
                                               <label for="validationCustom01" class="form-label">1. Category</label>
@@ -279,9 +279,9 @@
                             <form action="/afterLogin/dashboard.html" method="get" id="login">
                                 <h3>Login Here</h3>
                                 <label for="username">Username(Registration Number)</label>
-                                <input type="text" placeholder="eg. 1110176501" id="username">
+                                <input type="text" placeholder="eg. 1110176501" id="username" value="">
                                 <label for="password">Password</label>
-                                <input type="password" placeholder="Password" id="password">
+                                <input type="password" placeholder="Password" id="password" value="">
                                 <div class="row mt-3">
                                     <div class="col-md-6" id="capcha">
                                         <span>BiDY7</span>
@@ -317,26 +317,7 @@
         <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.js"></script>
         <script src="../js/main.js"></script>
         <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (function () {
-                'use strict'
             
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.querySelectorAll('.needs-validation')
-            
-                // Loop over them and prevent submission
-                Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-            
-                    form.classList.add('was-validated')
-                    }, false)
-                })
-            })()
         </script>
     </body>
 </html>

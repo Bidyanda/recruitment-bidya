@@ -83,11 +83,11 @@
                                         <h7>One Time Registration</h7>
                                         <h4>Personal Details</h4>
                                         <hr>
-                                        <form class="row g-3 needs-validation" novalidate>
+                                        <form action="/registration/passwordCreation.html" method="get" class="row g-3 needs-validation" novalidate>
                                             <!-- Aadhaar Card Number  -->
                                             <div class="col-md-12">
                                               <label for="validationCustom01" class="form-label">1. Aadhaar Card Number</label>
-                                              <input type="text" class="form-control" id="validationCustom01" name="aadhaar_number" value="" required>
+                                              <input type="text" class="form-control" id="validationCustom01" name="aadhaar_number" value="124578985412" required>
                                               <!-- <div class="valid-feedback">
                                                 Looks good!
                                               </div> -->
@@ -95,7 +95,7 @@
                                             <!-- Candidate Name  -->
                                             <div class="col-md-12">
                                               <label for="validationCustom02" class="form-label">2. Candidate Name (As per Matriculation Certificate)</label>
-                                              <input type="text" class="form-control" id="validationCustom02" name="candidate_name" value="" required>
+                                              <input type="text" class="form-control" id="validationCustom02" name="candidate_name" value="Ningthoujam Bidyanda Singh" required>
                                               <!-- <div class="valid-feedback">
                                                 Looks good!
                                               </div> -->
@@ -105,7 +105,7 @@
                                                 <label for="validationCustom03" class="form-label">3. Gender</label>
                                                 <select class="form-select" id="validationCustom03" name="gender" required>
                                                   <option selected disabled value="">--Select Gender--</option>
-                                                  <option value="Male">Male</option>
+                                                  <option value="Male" selected>Male</option>
                                                   <option value="Female">Female</option>
                                                   <option value="Transgender">Transgender</option>
                                                 </select>
@@ -122,14 +122,14 @@
                                               </div>
                                               <div class="col-md-12">
                                                 <label for="validationCustom05" class="form-label">5. Father's Name( Father's Name should be same as mentioned in Matriculation Certificate)</label>
-                                                <input type="text" class="form-control" id="validationCustom05" name="father_name" value="" required>
+                                                <input type="text" class="form-control" id="validationCustom05" name="father_name" value="Ningthoujam Bheigyachandra" required>
                                                 <!-- <div class="valid-feedback">
                                                   Looks good!
                                                 </div> -->
                                               </div>
                                               <div class="col-md-12">
                                                 <label for="validationCustom06" class="form-label">6. Mother's Name( Mother's Name should be same as mentioned in Matriculation Certificate)</label>
-                                                <input type="text" class="form-control" id="validationCustom06" name="monther_name" value="" required>
+                                                <input type="text" class="form-control" id="validationCustom06" name="monther_name" value="Ningthoujam Landhoni Devi" required>
                                                 <!-- <div class="valid-feedback">
                                                   Looks good!
                                                 </div> -->
@@ -138,7 +138,7 @@
                                                 <label for="validationCustom07" class="form-label">7. Matriculation (10<sup>th</sup> class) Education Board</label>
                                                 <select class="form-select" id="validationCustom07" name="matriculation_board" required>
                                                     <option selected disabled value="">--Select Education Board--</option>
-                                                    <option value="1">Board of Secondary Education Manipur</option>
+                                                    <option value="1" selected>Board of Secondary Education Manipur</option>
                                                     <option value="2">Central Board of Secondary Education</option>
                                                   </select>
                                                 <!-- <div class="valid-feedback">
@@ -147,14 +147,14 @@
                                               </div>
                                               <div class="col-md-12">
                                                 <label for="validationCustom07" class="form-label">8. Roll Number(Roll Number should be same as mentioned in Matriculation Certificate)</label>
-                                                <input type="text" class="form-control" id="validationCustom07" name="matriculation_roll_no" value="" required>
+                                                <input type="text" class="form-control" id="validationCustom07" name="matriculation_roll_no" value="3056" required>
                                                 <!-- <div class="valid-feedback">
                                                   Looks good!
                                                 </div> -->
                                               </div>
                                               <div class="col-md-12">
                                                 <label for="validationCustom09" class="form-label">9. Year of Passing</label>
-                                                <input type="text" class="form-control" id="validationCustom09" name="matriculation_year_of_passing" value="" required>
+                                                <input type="text" class="form-control" id="validationCustom09" name="matriculation_year_of_passing" value="2009" required>
                                                 <!-- <div class="valid-feedback">
                                                   Looks good!
                                                 </div> -->
@@ -166,7 +166,7 @@
                                                     <option value="1">Matriculation</option>
                                                     <option value="2">Higher Secondary</option>
                                                     <option value="3">Graduate</option>
-                                                    <option value="4">Post Graduate</option>
+                                                    <option value="4" selected>Post Graduate</option>
                                                   </select>
                                                 <!-- <div class="valid-feedback">
                                                   Looks good!
@@ -174,14 +174,14 @@
                                               </div>
                                               <div class="col-md-12">
                                                 <label for="validationCustom11" class="form-label">11. Candidate's Mobile Number</label>
-                                                <input type="text" class="form-control" id="validationCustom11" name="mobile_number" value="" required>
+                                                <input type="text" class="form-control" id="validationCustom11" name="mobile_number" value="8014889004" required>
                                                 <!-- <div class="valid-feedback">
                                                   Looks good!
                                                 </div> -->
                                               </div>
                                               <div class="col-md-12">
                                                 <label for="validationCustom12" class="form-label">12. Candidate's Email ID</label>
-                                                <input type="email" class="form-control" id="validationCustom12" name="email_id" value="" required>
+                                                <input type="email" class="form-control" id="validationCustom12" name="email_id" value="bidyanda@gmail.com" required>
                                                 <!-- <div class="valid-feedback">
                                                   Looks good!
                                                 </div> -->
@@ -284,26 +284,8 @@
         <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.js"></script>
         <script src="../js/main.js"></script>
         <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (function () {
-                'use strict'
+
             
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.querySelectorAll('.needs-validation')
-            
-                // Loop over them and prevent submission
-                Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-            
-                    form.classList.add('was-validated')
-                    }, false)
-                })
-            })()
         </script>
     </body>
 </html>
