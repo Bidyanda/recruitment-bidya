@@ -71,4 +71,13 @@ requiredFields.forEach(function(field) {
         }, false)
     })
 })()
- 
+ //profile 
+ $(document).ready(function () {
+    var name = $(".short-name").html();
+    var arr_name = name.split(" ");
+    var sName = '';
+    $(arr_name).each(function(index, value) {
+        sName += value.charAt(0)
+    });
+    $(".short-name").html(sName);
+ });

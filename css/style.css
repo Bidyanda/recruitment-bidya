@@ -115,7 +115,7 @@ form#login{
     padding: 15px 10px;
 }
 form#login *{
-    font-family: 'Poppins',sans-serif;
+    /* font-family: 'Poppins',sans-serif; */
     color: #171313;
     letter-spacing: 0.5px;
     outline: none;
@@ -288,7 +288,51 @@ button.submit,button.submit:hover,a.submit:hover,a.submit,a.submit:focus,button.
     background-color: #d1a00c;
     border: none;
 }
+i.fas.fa-user.users {
+    padding: 4px;
+    border: 1px solid #ffc107;
+    border-radius: 11px;
+    background-color: #b71e08a1;
+}
+.mainmenu ul li:nth-child(1) a:hover {
+    color: black !important;
+}
 /* .card{
     --bs-card-border-color: rgb(243 226 226 / 18%) !important;
     --bs-card-bg: #f9f7ef !important;
 } */
+/* dashboard */
+
+.profile-label {
+    font-size: 13px;
+}
+.profile {
+    font-size: 15px;
+    font-weight: 500;
+}
+.profile-name {
+    border-right-style: solid;
+    border-right-color: #0a0a0a;
+    border-right-width: thin;
+    position: relative;
+    padding-top: 3%;
+}
+a.back {
+    text-decoration: none;
+    color: black;
+}
+.nbs-container {
+    white-space: nowrap;
+}
+.short-name {
+    border: 1px solid #bbb9b9;
+    margin-left: 34%;
+    margin-right: 34%;
+    border-radius: 49px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+    top: -58px;
+    font-weight: 700;
+}
