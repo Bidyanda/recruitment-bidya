@@ -336,3 +336,10 @@ a.back {
     top: -58px;
     font-weight: 700;
 }
+.admitcard-header {
+    flex-direction: row !important;
+    justify-content: space-between; 
+}
+.last-item {
+    margin-left: auto;
+}
