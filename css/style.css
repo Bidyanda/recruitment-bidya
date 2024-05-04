@@ -311,11 +311,13 @@ i.fas.fa-user.users {
     font-weight: 500;
 }
 .profile-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-right-style: solid;
-    border-right-color: #0a0a0a;
+    border-right-color: #e3d6d6;
     border-right-width: thin;
-    position: relative;
-    padding-top: 3%;
+    /* position: relative; */
 }
 a.back {
     text-decoration: none;
@@ -326,14 +328,13 @@ a.back {
 }
 .short-name {
     border: 1px solid #bbb9b9;
-    margin-left: 34%;
-    margin-right: 34%;
     border-radius: 49px;
     padding: 20px;
     background-color: white;
-    position: absolute;
-    z-index: 1000;
-    top: -58px;
+    /* position: absolute; */
+    /* z-index: 1000; */
+    /* top: -58px; */
+    margin-top:-15%;
     font-weight: 700;
 }
 .admitcard-header {
@@ -342,4 +343,72 @@ a.back {
 }
 .last-item {
     margin-left: auto;
+}
+.sm-exam {
+    font-size: 11px;
+}
+.sm-exam-body {
+    font-size: 13px;
+    font-weight: 500;
+}
+a.link-apply {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    padding: 8px 20 8px 20px;
+    background-color: #e3c00c;
+    border-radius: 21px;
+    font-weight: 600;
+}
+.exist {
+    font-size: 13px;
+    color: red;
+}
+.txt-color{
+    color: #e3c00c !important;
+}
+.header-status {
+    color: #c59400;
+    padding: 10px 0px 10px 26px;
+    background-color: #e9e5de;
+    font-weight: bold;
+    margin-left: -27px;
+    margin-right: -27px;
+}
+.foot-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+img.logo_hcm {
+    width: 79%;
+    margin-top: 5px;
+}
+.hcm-logo {
+    width: 11%;
+    margin-left: 43%;
+}
+ ul.ul-link {
+    margin: 0;
+    list-style-type: none;
+}
+span.ul-head {
+    font-size: 19px;
+    font-weight: 500;
+    text-decoration: underline;
+} 
+.ul-link {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Ensure the ul takes up the full width of its parent */
+}
+
+.ul-link li {
+    margin-bottom: 10px;
+}
+
+.foot-address {
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+    display: block; /* Ensure the address text is displayed as a block element */
+    max-width: 100%; /* Ensure the address text doesn't exceed the width of the container */
 }
