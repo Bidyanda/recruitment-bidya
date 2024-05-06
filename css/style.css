@@ -44,9 +44,23 @@ label.required::before {
     }
 }
 a.nav-link {
-    font-weight: 700;
+    font-weight: 500;
 }
-
+.quick-link {
+    background-color: white !important;
+    width: 100%;
+    border: thin solid #f1cd64 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-align: start !important;
+    box-shadow: 1px -1px 7px 0px rgb(255 193 7 / 61%);
+}
+.icon {
+    background-color: white !important;
+}
+.quick-link:hover {
+    background-color: #c9c9b1 !important;
+}
 /* Hover effect */
 .mainmenu ul li:nth-child(1) a:hover{
     color: blue;
@@ -88,15 +102,16 @@ img {
 }
 
 footer.footer {
-    background-color: #e5e5da;
+    background-color: #020202;
+    color: white !important;
 }
 .footer-design {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    /* text-align: center; */
     font-size: 13px;
 }
 img#footer {
@@ -378,19 +393,25 @@ a.link-apply {
 .foot-banner {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    height: 20vh; /* Adjust as needed */
 }
 img.logo_hcm {
     width: 79%;
     margin-top: 5px;
+    background-color: aliceblue;
+    border-radius: 16px;
 }
 .hcm-logo {
-    width: 11%;
-    margin-left: 43%;
+    width: 30%;
+    /* margin-left: 43%; */
 }
- ul.ul-link {
+ ul.ul-link.useful{
     margin: 0;
-    list-style-type: none;
+    /* list-style-type: none; */
+    line-height: 15px;
 }
 span.ul-head {
     font-size: 19px;
@@ -412,3 +433,13 @@ span.ul-head {
     display: block; /* Ensure the address text is displayed as a block element */
     max-width: 100%; /* Ensure the address text doesn't exceed the width of the container */
 }
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-end; */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    height: 20vh; /* Adjust as needed */
+}
+
+

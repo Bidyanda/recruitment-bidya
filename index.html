@@ -23,6 +23,39 @@
             </nav> 
             <nav class="navbar navbar-expand-lg bg-warning">
                 <div class="container">
+                  <a class="navbar-brand" href="#">HCM Recruitment</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse mainmenu" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="/">Chairman's Message</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              For Candidates
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                              <li><a class="dropdown-item" href="#">Previous Year Question Paper</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Tentative Vacancy</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a class="nav-link" href="/">About Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="collapse navbar-collapse mainmenu" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <span class="" data-bs-toggle="modal" id="login" data-bs-target="#staticBackdrop" style="cursor:pointer">Login or Register</span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            <!-- <nav class="navbar navbar-expand-lg bg-warning">
+                <div class="container">
                     <a class="navbar-brand" href="/">HCM Recruitment</a>
                     <div class="navbar-brand d-lg-none  d-md-none d-xl-none">Digital High Court of Manipur Reports</div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +71,7 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav> -->
         </header>
         <!-- <main role="main" class="flex-shrink-0"> -->
         <div class="wrapper mb-2">
@@ -146,7 +179,22 @@
                             </div>
                         </div>
                         <div class="col-md-3  col-sm-3 mt-2">
-                            <form action="/afterLogin/dashboard.html" method="get" id="login">
+                            <h4 class="">Quick Links</h4>
+                            <div class="row">
+                                <div class="col-md-6  my-1 ">
+                                    <a class=" btn btn-lg quick-link" href=""> <i class="fa-solid fa-pencil icon"></i> Apply</a>
+                                </div>
+                                <div class="col-md-6  my-1 ">
+                                    <a class=" btn btn-lg quick-link" href="notice.html"> <i class="fa-solid fa-info icon"></i> Notice</a>
+                                </div>
+                                <div class="col-md-6  my-1 ">
+                                    <a class=" btn btn-lg quick-link" href=""> <i class="fa-solid fa-id-card icon"></i> Admitcard</a>
+                                </div>
+                                <div class="col-md-6  my-1 ">
+                                    <a class=" btn btn-lg quick-link" href="result.html"> <i class="fa-solid fa-square-poll-vertical icon"></i> Result</a>
+                                </div>
+                            </div>
+                            <!-- <form action="/afterLogin/dashboard.html" method="get" id="login">
                                 <h3 class="mb-4">Login Here</h3>
                                 <label for="username">Username(Registration Number)</label>
                                 <input type="text" placeholder="eg. 1110176501" id="username" autofocus>
@@ -158,7 +206,6 @@
                                     </div>
                                     <div class="col-md-6 mt-3">
                                         <i class="fa-solid fa-arrows-rotate"></i> <span role="button">Refresh</span>
-                                        <!-- <span role="button"><svg _ngcontent-ng-c2434723278="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><g _ngcontent-ng-c2434723278="" clip-path="url(#clip0_509_5148)"><path _ngcontent-ng-c2434723278="" d="M16.6108 10.8675C16.4535 12.0675 15.9724 13.202 15.2193 14.1493C14.4662 15.0967 13.4694 15.8211 12.3358 16.245C11.2022 16.6689 9.97465 16.7763 8.78472 16.5555C7.59478 16.3347 6.48739 15.7942 5.5813 14.9919C4.6752 14.1897 4.0046 13.1558 3.6414 12.0014C3.2782 10.8469 3.2361 9.6154 3.51963 8.43884C3.80316 7.26228 4.40162 6.1851 5.25081 5.32281C6.10001 4.46053 7.16792 3.84567 8.34 3.54418C11.5892 2.71085 14.9525 4.38335 16.1942 7.50002" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path><path _ngcontent-ng-c2434723278="" d="M16.6667 3.33337V7.50004H12.5" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path></g><defs _ngcontent-ng-c2434723278=""><clipPath _ngcontent-ng-c2434723278="" id="clip0_509_5148"><rect _ngcontent-ng-c2434723278="" width="20" height="20" fill="white"></rect></clipPath></defs></svg> Refresh</span> -->
                                     </div>
                                 </div>
                                 <label for="capcha">Capcha</label>
@@ -166,10 +213,9 @@
                                 <button class="btns">Log In</button>
                                 <div style="text-align:right;margin-top:20px;">
                                     <span class="text-info">Forgot Password</span><br>
-                                    <!-- <span class="text-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor:pointer">New User ? Register Now</span> -->
                                     <span class=""><a href="/registration/personalDetails.html" class="text-info">New User ? Register Now</a></span>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <div class="court mt-2 mx-2">
@@ -193,47 +239,93 @@
                 </div>
             </div>
         </div>
-       
-        <!-- </main> -->
-        <footer class="footer mt-auto py-3 text-muted ">
-            <div class="foo">
-                <div class="">
-                    <div class="foot-banner">
-                        <div class="hcm-logo">
-                            <img src="/images/hcm_logo.png" class="logo_hcm">
+       <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-md-12">
+                            <form action="/afterLogin/dashboard.html" method="get" id="login">
+                                <h3>Login Here</h3>
+                                <label for="username">Username(Registration Number)</label>
+                                <input type="text" placeholder="eg. 1110176501" id="username">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="Password" id="password">
+                                <div class="row mt-3">
+                                    <div class="col-md-6" id="capcha">
+                                        <span>BiDY7</span>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <span role="button"> <svg _ngcontent-ng-c2434723278="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><g _ngcontent-ng-c2434723278="" clip-path="url(#clip0_509_5148)"><path _ngcontent-ng-c2434723278="" d="M16.6108 10.8675C16.4535 12.0675 15.9724 13.202 15.2193 14.1493C14.4662 15.0967 13.4694 15.8211 12.3358 16.245C11.2022 16.6689 9.97465 16.7763 8.78472 16.5555C7.59478 16.3347 6.48739 15.7942 5.5813 14.9919C4.6752 14.1897 4.0046 13.1558 3.6414 12.0014C3.2782 10.8469 3.2361 9.6154 3.51963 8.43884C3.80316 7.26228 4.40162 6.1851 5.25081 5.32281C6.10001 4.46053 7.16792 3.84567 8.34 3.54418C11.5892 2.71085 14.9525 4.38335 16.1942 7.50002" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path><path _ngcontent-ng-c2434723278="" d="M16.6667 3.33337V7.50004H12.5" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path></g><defs _ngcontent-ng-c2434723278=""><clipPath _ngcontent-ng-c2434723278="" id="clip0_509_5148"><rect _ngcontent-ng-c2434723278="" width="20" height="20" fill="white"></rect></clipPath></defs></svg> Refresh</span>
+                                    </div>
+                                </div>
+                                <label for="capchas">Capcha</label>
+                                <input type="text" placeholder="Capcha" id="capchas">
+                                <button class="btns">Log In</button>
+                                <div style="text-align:right;margin-top:20px;">
+                                    <span class="text-info">Forgot Password</span><br>
+                                    <!-- <span class="text-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor:pointer">New User ? Register Now</span> -->
+                                    <span class=""><a href="/registration/personalDetails.html" class="text-info">New User ? Register Now</a></span>
+                                </div>
+                            </form>
                         </div>
-                        <div class="hcm-logo-content">
-                            <div  class="">High Court of Manipur </div>
-                            <div  class="">Recruitment Board</div>
                         </div>
                     </div>
                 </div>
-                <div class="">
-                    <div> Public Disclosure of Scores and Other Details of Non-Recommended Willing Candidates </div>
-                </div>
-                <div class="">
-                    <ul class="ul-link">
-                        <li><span class="ul-head">Useful Links</span></li>
-                        <li>Archives</li>
-                        <li>Disclaimer</li>
-                        <li>Sitemap</li>
-                        <li>Help</li>
-                        <li>Website Policies</li>
-                        <li>Web Information Manager</li>
-                    </ul>
-                </div>
-                <div class="">
-                    <ul class="ul-link">
-                        <li><span class="ul-head">Contact Us</span></li>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i><span class="foot-address">High Court Complex, Mantripukhri, Chingmeirong, Imphal, Heingang, Manipur 795002</span>
-                        </li>
-                    </ul>
-                </div>
             </div>
+        </div>
+    </div>
+    <!-- Modal confirmation  -->
+        <!-- </main> -->
+        <footer class="footer mt-auto py-3  text-muted ">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="foot-banner">
+                      <div class="hcm-logo">
+                        <img src="/images/hcm_logo.png" class="logo_hcm">
+                      </div>
+                      <div class="hcm-logo-content">
+                        <div>High Court of Manipur</div>
+                        <div>Recruitment Board</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="footer-text">
+                        <div>Public Disclosure of Scores and Other Details of Non-Recommended Willing Candidates</div>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                    <ul class="ul-link useful">
+                      <li><span class="ul-head">Useful Links</span></li>
+                      <li>Archives</li>
+                      <li>Disclaimer</li>
+                      <li>Sitemap</li>
+                      <li>Help</li>
+                      <li>Website Policies</li>
+                      <li>Web Information Manager</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="ul-link">
+                      <li><span class="ul-head">Contact Us</span></li>
+                      <li>
+                        <span class="foot-address"><i class="fa-solid fa-location-dot"></i> High Court Complex, Mantripukhri, Chingmeirong, Imphal, Heingang, Manipur 795002</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             <hr>
             <div class="container footer-design">
-                <img src="/images/hcm_logo.png" class="logo_img" id="footer">
+                <!-- <img src="/images/hcm_logo.png" class="logo_img" id="footer"> -->
                 <span> © 2024 <a href="https://hcmimphal.nic.in/">High Court of Manipur.</a> All Rights Reserved</span>
             </div>
         </footer>
