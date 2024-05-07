@@ -2,11 +2,15 @@
 // $(document).ready(function(){
     
 // });
+// step for registration 
 $(".stepper-step").click(function(){
     var id = $(this).attr('id');
     if((!$(".stepper-step:nth-child(" + (id - 1) + ")").hasClass("stepper-active") && !$(".stepper-step:nth-child(" + (id - 1) + ")").hasClass("stepper-completed"))){
-        if(id != 1)
-        return false;
+        if(id != 1 && id != 5){
+            return false;
+        }
+
+
     }
     if(id > 1 && ($(".stepper-step:nth-child(" + (id - 1) + ")").hasClass("stepper-active") || $(".stepper-step:nth-child(" + (id - 1) + ")").hasClass("stepper-completed"))){
         $(".stepper-step:lt(" + id + ")").addClass("stepper-completed");
@@ -32,7 +36,54 @@ $(".stepper-step").click(function(){
         window.location.href = "http://127.0.0.1:5500/registration/declaration.html";
 
 });
+// step for applying form 
+$(".stepper-step.apply").click(function(){
+    var id = $(this).attr('id');
+    if((!$(".stepper-step.apply:nth-child(" + (id - 1) + ")").hasClass("stepper-active") && !$(".stepper-step.apply:nth-child(" + (id - 1) + ")").hasClass("stepper-completed"))){
+        if(id != 1){
+            return false;
+        }
 
+
+    }
+    if(id > 1 && ($(".stepper-step.apply:nth-child(" + (id - 1) + ")").hasClass("stepper-active") || $(".stepper-step.apply:nth-child(" + (id - 1) + ")").hasClass("stepper-completed"))){
+        console.log('2222');
+        $(".stepper-step.apply:lt(" + id + ")").addClass("stepper-completed");
+        return false;
+    }else{
+        if(id==1 && !$(this).hasClass('stepper-completed')){
+            console.log(2);
+            return false;
+        }
+    }
+    
+    $(".stepper-step.apply").removeClass("stepper-active");
+    if ( id == 1 || $(".stepper-step.apply:nth-child(" + (id - 1) + ")").hasClass("stepper-completed")) {
+        $(".stepper-step.apply:nth-child(" + id + ")").addClass("stepper-active");
+    }
+    // $(".stepper-content").removeClass('stepper-content-show').addClass("stepper-content-hide");
+    // $(".stepper-content:nth-child("+id+")").removeClass("stepper-content-hide").addClass('stepper-content-show');
+    if(id == 1)
+        window.location.href = "http://127.0.0.1:5500/apply/instruction.html";
+    else if(id == 2)
+        window.location.href = "http://127.0.0.1:5500/apply/personal_details.html";
+    else if (id == 3)
+        window.location.href = "http://127.0.0.1:5500/apply/education_details.html";
+    else if (id == 4)
+        window.location.href = "http://127.0.0.1:5500/apply/additional_information.html";
+    else if(id == 5)
+        window.location.href = "http://127.0.0.1:5500/apply/upload_document.html";
+    else if (id == 6)
+        window.location.href = "http://127.0.0.1:5500/apply/preview_form.html";
+    else if (id == 7)
+        window.location.href = "http://127.0.0.1:5500/apply/payment.html";
+
+});
+
+
+
+
+//end
 var requiredInputs = document.querySelectorAll('input[required]');
 
 // Iterate through each required input element
