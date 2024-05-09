@@ -71,7 +71,7 @@
             <div class="container">
                 <div class="site-index">
                     <div class='fw-semibold fs-6 mb-2 mt-1'>
-                      <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;<a href="/" class="back"> Homepage </a>&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp; <span role="button">Application Form</span>
+                      <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;<a href="../afterLogin/dashboard.html" class="back"> Candidate Dashboard </a>&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp; <span role="button">Application Form</span>
                     </div>
                     <div class="row">
                         <div class="col-md-3 steps mt-3">
@@ -126,8 +126,82 @@
                         <div class="col-md-9 steps-body mt-3">
                             <div class="card card-default">
                                 <div class="card card-body">
-                                    <div class="stepper-content py-3">
+                                    <div class="stepper-content py-3 row mx-4">
                                         <h3>Education Details</h3>
+                                        <hr>
+                                        <form action="" method="get" class="row g-3 needs-validation" novalidate>
+                                          <!-- Highest Qualification  -->
+                                          <div class="col-md-12">
+                                            <label for="validationCustom01" class="form-label">19. Highest Educational Qualification:</label>
+                                                <select class="form-select" id="validationCustom01" name="highest_qualification" required>
+                                                  <option selected disabled value="">--Select Qualification--</option>
+                                                  <option value="1" selected>Matriculation</option>
+                                                  <option value="2">Higher Secondary</option>
+                                                  <option value="3">Graduate</option>
+                                                  <option value="4">Post Graduate</option>
+                                                </select>
+                                          </div>
+                                          <!-- Qualifying Education Qualification  -->
+                                          <h3>Qualifying Educational Qualification</h3>
+                                          <div class="col-md-12">
+                                            <label for="validationCustom02" class="form-label">20. Details of Qualifying Educational Qualification:</label>
+                                              <select class="form-select" id="validationCustom02" name="qualify_qualification" required>
+                                                <option selected disabled value="">--Select Qualification--</option>
+                                                <option value="1" selected>Matriculation</option>
+                                                <option value="2">Higher Secondary</option>
+                                                <option value="3">Graduate</option>
+                                                <option value="4">Post Graduate</option>
+                                              </select>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <label for="validationCustom03" class="form-label">20.1. Passing Year:</label>
+                                              <select class="form-select" id="validationCustom03" name="qualify_passing_year" required>
+                                                <option selected disabled value="">--Select Year--</option>
+                                                <option value="2024" selected>2024</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                              </select>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <label for="validationCustom04" class="form-label">20.2. State/ UT of Board/ University:</label>
+                                              <select class="form-select" id="validationCustom04" name="qualify_state_of_institution" required>
+                                                <option selected disabled value="">--Select State--</option>
+                                                <option value="Manipur" selected>Manipur</option>
+                                                <option value="Nagaland">Nagaland</option>
+                                                <option value="Assam">Assam</option>
+                                              </select>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <label for="validationCustom05" class="form-label">20.3. State/ UT of Board/ University:</label>
+                                              <select class="form-select" id="validationCustom05" name="qualify_name_of_board_or_university" required>
+                                                <option selected disabled value="">--Select Board/University--</option>
+                                                <option value="1" selected>Board of Secondary Education Manipur</option>
+                                                <option value="2">Council of Higher Secondary Education Manipur</option>
+                                                <option value="3">Manipur University</option>
+                                              </select>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <label for="validationCustom06" class="form-label">20.4. Roll Number:</label>
+                                              <input type="text" class="form-control" id="validationCustom06" name="qualify_roll_no" required>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <label for="validationCustom07" class="form-label">20.5. Percentage:</label>
+                                            <input type="text" class="form-control" id="validationCustom07" name="qualify_percentage">
+                                          </div>
+                                          <div class="col-md-12">
+                                            <label for="validationCustom08" class="form-label">20.6. CGPA:</label>
+                                            <input type="text" class="form-control" id="validationCustom08" name="qualify_cgpa">
+                                          </div>
+                                          <div class="col-md-12 text-end">
+                                            <a href="personal_details.html" class="btn submit bg-dark text-white">Go Back</a>
+                                            <button class="btn text-capitalize submit" type="submit">Save & Next</button>
+                                          </div>
+                                      </form>
                                     </div>
                                 </div>
                             </div>

@@ -126,8 +126,36 @@
                         <div class="col-md-9 steps-body mt-3">
                             <div class="card card-default">
                                 <div class="card card-body">
-                                    <div class="stepper-content py-3">
-                                        <h3>Additional Information</h3>
+                                    <div class="stepper-content py-3 row mx-4">
+                                      <h3>Additional Information</h3>
+                                      <hr>
+                                      <form action="" method="get" class="row g-3 needs-validation" novalidate>
+                                        <div class="col-md-12">
+                                          <label for="validationCustom01" class="form-label">21. Examination Center:</label>
+                                            <select class="form-select" id="validationCustom01" name="exam_center" required>
+                                              <option selected disabled value="">--Select Exam Center--</option>
+                                              <option value="1" selected>Imphal</option>
+                                              <option value="2">Kangpokpi</option>
+                                              <option value="3">Churachandpur</option>
+                                              <option value="4">Dimapur</option>
+                                              <option value="5">Guwahti</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <label for="validationCustom02" class="form-label">22. Medium for Computer Based Examination(CBE):</label>
+                                            <select class="form-select" id="validationCustom02" name="exam_medium" required>
+                                              <option selected disabled value="">--Select Exam Center--</option>
+                                              <option value="1">English</option>
+                                              <option value="2">Meitei Mayek</option>
+                                              <option value="3">Hindi</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-md-12 text-end">
+                                          <a href="education_details.html" class="btn submit bg-dark text-white">Go Back</a>
+                                          <button class="btn text-capitalize submit" type="submit">Save & Next</button>
+                                        </div>
+                                      </form>
                                     </div>
                                 </div>
                             </div>

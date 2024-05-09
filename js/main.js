@@ -65,7 +65,8 @@ $(".stepper-step").click(function(){
     // Note :- First 7 is for Applying Post and remaining is for Registration 
     // console.log(attr);
     // return false;
-  
+    // console.log(id+' =>'+flag);
+    // return false;
     if(id == 1 && flag)
         window.location.href = "http://127.0.0.1:5500/apply/instruction.html";
     else if(id == 2 && flag)
@@ -81,19 +82,14 @@ $(".stepper-step").click(function(){
     else if (id == 7 && flag)
         window.location.href = "http://127.0.0.1:5500/apply/payment.html";
     else if(id == 1)
-        window.location.href = "http://127.0.0.1:5500/apply/instruction.html";
+        window.location.href = "http://127.0.0.1:5500/registration/personalDetails.html";
     else if(id == 2)
-        window.location.href = "http://127.0.0.1:5500/apply/personal_details.html";
+        window.location.href = "http://127.0.0.1:5500/registration/passwordCreation.html";
     else if (id == 3)
-        window.location.href = "http://127.0.0.1:5500/apply/education_details.html";
+        window.location.href = "http://127.0.0.1:5500/registration/additionalDetails.html";
     else if (id == 4)
-        window.location.href = "http://127.0.0.1:5500/apply/additional_information.html";
-    else if(id == 5)
-        window.location.href = "http://127.0.0.1:5500/apply/upload_document.html";
-    else if (id == 6)
-        window.location.href = "http://127.0.0.1:5500/apply/preview_form.html";
-    else if (id == 7)
-        window.location.href = "http://127.0.0.1:5500/apply/payment.html";
+        window.location.href = "http://127.0.0.1:5500/registration/declaration.html";
+    
 
 });
     
@@ -146,3 +142,18 @@ requiredFields.forEach(function(field) {
     });
     $(".short-name").html(sName);
  });
+// Common for image change, image input change display also change
+function readURL(input, elem) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        elem.attr('src', e.target.result);
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#product-mobile_image").change(function(){
+    var path = $("#mobile_image");
+    readURL(this, path);
+  });
