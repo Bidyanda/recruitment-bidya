@@ -71,50 +71,50 @@
             <div class="container">
                 <div class="site-index">
                     <div class='fw-semibold fs-6 mb-2 mt-1'>
-                      <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;<a href="../afterLogin/dashboard.html" class="back"> Candidate Dashboard </a>&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp; <span role="button">Application Form</span>
+                      <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;<a href="/" class="back"> Homepage </a>&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp; <span role="button">Application Form</span>
                     </div>
                     <div class="row">
                         <div class="col-md-3 steps mt-3">
                             <section class="p-4 d-flex justify-content-center w-100">
                                 <ul class="stepper stepper-vertical" data-mdb-stepper-init="" data-mdb-stepper-type="vertical" data-mdb-stepper-initialized="true">
                                   <!-- <li class="stepper-step stepper-completed"> -->
-                                  <li class="stepper-step apply stepper-active " id="1">
+                                  <li class="stepper-step apply stepper-completed" id="1">
                                     <div class="stepper-head" tabindex="0">
                                       <span class="stepper-head-icon"> 1 </span>
                                       <span class="stepper-head-text"> Instruction </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step apply" id="2">
+                                  <li class="stepper-step apply stepper-completed" id="2">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 2 </span>
                                       <span class="stepper-head-text"> Personal Details Preview </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step apply" id="3">
+                                  <li class="stepper-step apply stepper-completed" id="3">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 3 </span>
                                       <span class="stepper-head-text"> Education Details </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step apply" id="4">
+                                  <li class="stepper-step apply stepper-completed" id="4">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 4 </span>
                                       <span class="stepper-head-text"> Additional Information </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step apply" id="5">
+                                  <li class="stepper-step apply stepper-completed" id="5">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 5 </span>
                                       <span class="stepper-head-text"> Upload Document </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step apply" id="6">
+                                  <li class="stepper-step apply stepper-completed" id="6">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 6 </span>
                                       <span class="stepper-head-text"> Preview Form </span>
                                     </div>
                                   </li>
-                                  <li class="stepper-step apply" id="7">
+                                  <li class="stepper-step apply stepper-completed" id="7">
                                     <div class="stepper-head">
                                       <span class="stepper-head-icon"> 7 </span>
                                       <span class="stepper-head-text"> Submit Form </span>
@@ -124,26 +124,22 @@
                             </section>
                         </div>
                         <div class="col-md-9 steps-body mt-3">
-                            <div class="card card-default">
-                                <div class="card card-body">
-                                    <div class="stepper-content py-3">
-                                        <h7>Application Form</h7>
-                                        <h4>Instruction</h4>
-                                        <hr>
-                                        <div class="mx-5">
-                                            <h4>Combined Graduate Level Examination, 2024</h4>
-                                            <h6>Instructions to follow</h6>
-                                            <div><hr></div>
-                                            <div class="intro-body fw-semibold">
-                                                <ul class="">
-                                                    <li>Read the notice of examination carefully.</li>
-                                                    <li>Please be careful and provide correction details in the application form.</li>
-                                                    <li>Fee can be paid only through online payment modes, namely BHIM UPI, Net Banking, or by using Visa, Mastercard, Maestro, or Rupay, Credit or Debit card.</li>
-                                                </ul>
-                                            </div><br><br><br><br><br>
-                                            <div class="text-end">
-                                                <a href="" class="back fw-semibold fs-6 fill-form ">Fill Form</a>
-                                            </div>
+                            <div class="stepper-content py-3">
+                                <div class="text-center row">
+                                    <div class="offset-md-3 col-md-6 message py-5">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                                        <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                                      </svg>
+                                      <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <circle class="path circle" fill="none" stroke="#D06079" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                                        <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="34.4" y1="37.9" x2="95.8" y2="92.3"/>
+                                        <line class="path line" fill="none" stroke="#D06079" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="95.8" y1="38" x2="34.4" y2="92.2"/>
+                                      </svg> -->
+                                        <p class="fs-3">Form Received successfully, payment pending.</p>
+                                        <div>
+                                            <a href="../afterLogin/dashboard.html" class="btn btn-md text-capitalize submit">Go to Dashboard</a>
+                                            <a href="#" class="back mx-3 sm-exam text-dark btn submit text-capitalize" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor:pointer">Make Payment</a>
                                         </div>
                                     </div>
                                 </div>
@@ -153,39 +149,40 @@
                 </div>
             </div>
         </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="confirmation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-              <div class=" text-end">
-              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-              </div>
-              <div class="modal-body">
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-12">
-                              <mat-dialog-container tabindex="-1" class="mat-mdc-dialog-container mdc-dialog cdk-dialog-container mdc-dialog--open" id="mat-mdc-dialog-2" role="dialog" aria-modal="true" style="--mat-dialog-transition-duration: 150ms;">
-                              <div class="mdc-dialog__container text-center">
-                                          <div _ngcontent-pfw-c10="" class="_4">
-                                              <svg _ngcontent-pfw-c10="" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="check-contained"><path _ngcontent-pfw-c10="" d="M50.4734 33.2766L36.25 47.5L31.4016 42.6516M40 10C23.4315 10 10 23.4315 10 40C10 56.5685 23.4315 70 40 70C56.5685 70 70 56.5685 70 40C70 23.4315 56.5685 10 40 10Z" stroke="#188906" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                                  <div _ngcontent-pfw-c10="" class="cent-align">
-                                                      <div _ngcontent-pfw-c10="" class="successful">Success</div>
-                                                      <div _ngcontent-pfw-c10="" class="work-order-successfully-created"> Personal Details Updated Successfully! </div>
-                                                      <div _ngcontent-pfw-c10="" class="successful mt-3">
-                                                          <a href="/registration/passwordCreation.html" class="btn btn-sm submit" _ngcontent-pfw-c10="" >Okay</a>
-                                                      </div>
-                                                  </div>
-                                          </div>
-                                      </div>
-                                  </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Make a payment</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row payment">
+                              <div class="col-md-10">
+                                  <div>Fees Payment Mode</div>
                               </div>
+                              <div class="col-md-2">
+                                <div>Online</div>
+                              </div>
+                              <div class="col-md-10">
+                                <div>Amount</div>
+                            </div>
+                            <div class="col-md-2">
+                              <div>100</div>
+                            </div>
+                            <div class="col-md-12 text-end mt-4">
+                              <div class="pay-btn">
+                                <a href="#" class="link-apply btn submit">Pay</a>
+                              </div>
+                            </div>
                           </div>
+                      </div>
                   </div>
               </div>
           </div>
       </div>
-      <!-- end  -->
       <footer class="footer mt-auto py-3  text-muted ">
         <div class="container">
             <div class="row">

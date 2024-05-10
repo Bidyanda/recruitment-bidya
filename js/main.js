@@ -80,7 +80,7 @@ $(".stepper-step").click(function(){
     else if (id == 6 && flag)
         window.location.href = "http://127.0.0.1:5500/apply/preview_form.html";
     else if (id == 7 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/payment.html";
+        window.location.href = "http://127.0.0.1:5500/apply/declaration.html";
     else if(id == 1)
         window.location.href = "http://127.0.0.1:5500/registration/personalDetails.html";
     else if(id == 2)

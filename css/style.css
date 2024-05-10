@@ -463,3 +463,104 @@ span.numb {
     border: 1px solid black;
     border-radius: 5px;
 }
+.message {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 13px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+.animation{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+/* animation tick  */
+svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+  }
+  
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    &.circle {
+      -webkit-animation: dash .9s ease-in-out;
+      animation: dash .9s ease-in-out;
+    }
+    &.line {
+      stroke-dashoffset: 1000;
+      -webkit-animation: dash .9s .35s ease-in-out forwards;
+      animation: dash .9s .35s ease-in-out forwards;
+    }
+    &.check {
+      stroke-dashoffset: -100;
+      -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+      animation: dash-check .9s .35s ease-in-out forwards;
+    }
+  }
+  
+  p {
+    text-align: center;
+    margin: 20px 0 60px;
+    font-size: 1.25em;
+    &.success {
+      color: #73AF55;
+    }
+    &.error {
+      color: #D06079;
+    }
+  }
+  
+  
+  @-webkit-keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @-webkit-keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+  
+  @keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+  /* end  */
+  .payment {
+    font-size: 14px;
+    font-weight: 600;
+   }
+   .pay-btn {
+        background-color: #c9bd81;
+        padding: 8px 21px 8px 0px;
+        margin: 0px -28px -16px;
+    }
