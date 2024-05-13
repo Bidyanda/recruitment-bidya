@@ -157,3 +157,38 @@ $("#product-mobile_image").change(function(){
     var path = $("#mobile_image");
     readURL(this, path);
   });
+
+// $('#printButton').click(function() {
+//     var contentToPrint = $('.tbl-print').clone(); // Clone the content within tbl-print class
+//     var printWindow = window.open('', '_blank'); // Open a new window for printing
+//     printWindow.document.write('<html><head><title>Print</title></head><body></body></html>'); // Write the HTML structure to the new window
+//     printWindow.document.head.innerHTML += '<link rel="stylesheet" href="../css/style.css">'
+//     printWindow.document.body.appendChild(contentToPrint[0]); // Append the cloned content to the body of the new window
+//     printWindow.print(); // Print the new window
+//     printWindow.close(); // Close the new window after printing
+// });
+$(function () {
+    $("#printButton").click(function () {
+        var contents = $(".tbl-print").html();
+        var frame1 = $('<iframe />');
+        frame1[0].name = "frame1";
+        frame1.css({ "position": "absolute", "top": "-1000000px" });
+        $("body").append(frame1);
+        var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
+        frameDoc.document.open();
+        //Create a new HTML document.
+        frameDoc.document.write('<html><head><title>DIV Contents</title>');
+        frameDoc.document.write('</head><body>');
+        //Append the external CSS file.
+        frameDoc.document.write('<link href="../css/style.css" rel="stylesheet" type="text/css" />');
+        //Append the DIV contents.
+        frameDoc.document.write(contents);
+        frameDoc.document.write('</body></html>');
+        frameDoc.document.close();
+        setTimeout(function () {
+            window.frames["frame1"].focus();
+            window.frames["frame1"].print();
+            frame1.remove();
+        }, 500);
+    });
+});

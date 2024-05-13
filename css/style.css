@@ -366,7 +366,7 @@ a.back {
     font-size: 13px;
     font-weight: 500;
 }
-a.link-apply {
+a.link-apply,button.link-apply {
     text-decoration: none;
     font-size: 14px;
     color: black;
@@ -563,4 +563,46 @@ svg {
         background-color: #c9bd81;
         padding: 8px 21px 8px 0px;
         margin: 0px -28px -16px;
+    }
+    /* print  */
+    #print-head {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-weight: 800;
+        align-items: center;
+        text-align: center;
+        line-height: 35px;
+    }
+    .print-photo {
+        border: thin solid #cbc5c5b5;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    table#print-table {
+        width: 100%;
+        border: thin solid black;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    table#print-table td {
+        border-collapse: collapse;
+        border: thin solid black;
+        width: auto;
+        text-align: center;
+        text-overflow: ellipsis;
+        /* overflow: visible; */
+        white-space: normal;
+        /* overflow:auto;  */
+        /* white-space: nowrap; */
+    }
+    table#print-table td.print-declare {
+        font-weight: 500;
+        text-align: left;
+    }
+    .tbl-print {
+        background-color: white;
+        padding: 20px;
+        border: thin solid #e5e2e2;
     }

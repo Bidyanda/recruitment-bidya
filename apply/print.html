@@ -1,0 +1,335 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Personal Details</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/step.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    </head>
+    <body class="d-flex flex-column h-100">
+        <header>
+            <nav class="navbar .navbar-toggler .navbar-collapse .navbar-expand-lg d-none d-lg-block">
+                <div class="container">
+                    <div class="logo">
+                        <a class="" href="/"><img src="/images/hcm_logo.png" class="logo_img"></a>            </div>
+                    <div class="text-left fw-bold head-line">
+                        <span id="name-text">High Court Of Manipur</span><br>
+                        <span id="report-text">HCM Recruitment Board</span><br>
+                        <span id="official-text">(Government of India)</span>
+                    </div>
+                </div>
+            </nav> 
+            <nav class="navbar navbar-expand-lg bg-warning">
+              <div class="container">
+                <a class="navbar-brand" href="#">HCM Recruitment</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mainmenu" id="navbarNav">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/">Chairman's Message</a></li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            For Candidates
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                            <li><a class="dropdown-item" href="#">Previous Year Question Paper</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Tentative Vacancy</a></li>
+                          </ul>
+                        </li>
+                      <li class="nav-item"><a class="nav-link" href="/">About Us</a></li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse mainmenu" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" href="/" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span id="login">Login or Register</span></a>
+                            <span class="" data-bs-toggle="modal" id="login" data-bs-target="#staticBackdrop" style="cursor:pointer">Login or Register</span>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-user users"></i> Administrator
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Change Password</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+              </div>
+          </nav>
+        </header>
+        <!-- <main role="main" class="flex-shrink-0"> -->
+        <div class="wrapper mb-2">
+            <div class="container">
+                <div class="site-index">
+                    <div class='fw-semibold fs-6 mb-2 mt-1'>
+                      <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;<a href="/" class="back"> Homepage </a>&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i> &nbsp;&nbsp; <span role="button">Application Form</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 tbl-print">
+                            <div id="print-head">
+                                <div class="print-photo"><img src='../images/avatar.png' width="150px"></div>
+                                <div>
+                                    <div>HIGH COURT OF MANIPUR</div>
+                                    <div>HIGH COURT COMPLEX, MANTRIPUKHRI, CHINGMEIRONG, IMPHAL, HEINGANG, MANIPUR</div>
+                                    <div>795002</div>
+                                    <div>LDA Examination 2024</div>
+                                    <div>Registration No: 10010479265</div><br>
+                                    <div>Application Completed</div>
+                                </div>
+                                <div class="print-photo">
+                                    <div><img src='../images/left_thumb.png' width="150px"></div>
+                                    <div><img src='../images/signature.jpg' width="150px"></div>
+                                </div>
+                            </div><br>
+                            <table id="print-table">
+                                <tr>
+                                    <td style="width:40%"><b>1. CANDIDATE'S NAME(AS PER MATRICULATION CERTIFICATE)</b></td>
+                                    <td><b>2. GENDER</b></td>
+                                    <td><b>3. CATEGORY</b></td>
+                                    <td><b>4. AADHARR NO.</b></td>
+                                </tr>
+                                <tr>
+                                    <td>NINGTHOUJAM BIDYANDA SINGH</td>
+                                    <td>Male</td>
+                                    <td>SC</td>
+                                    <td>220245785452</td>
+                                </tr>
+                                <tr>
+                                    <td><b>5. FATHER'S NAME</b></td>
+                                    <td><b>6. MOTHER'S NAME</b></td>
+                                    <td colspan="2"><b>7. DATE OF BIRTH(DD/MM/YYYY)</b></td>
+                                </tr>
+                                <tr>
+                                    <td>NINGTHOUJAM BHEIGYACHANDRA SINGH</td>
+                                    <td>NINGTHOUJAM LANDHONI DEVI</td>
+                                    <td colspan="2">05/02/1994</td>
+                                </tr>
+                                <tr>
+                                    <td><b>8. AGE AS ON 01/08/2024</b></td>
+                                    <td><b>9. NATIONALITY</b></td>
+                                    <td colspan="2"><b>10. VISIBLE IDENTIFICATION MARK</b></td>
+                                </tr>
+                                <tr>
+                                    <td>30 Years 5 Months 29 Days</td>
+                                    <td>Citizen India</td>
+                                    <td colspan="2">ONE MOLE ON THE RIGHT CHEECK</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><b>10. WHETHER A PERSON WITH BENCHMARK DISABILITY(PwBD)?</b></td>
+                                    <td colspan="2"><b>11.1 IF YES, TYPE OF DISABILITY (OH, HH, VH, OTHERS)</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">No</td>
+                                    <td colspan="2">-</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><b>12. MATRICULATION (10th CLASS) EXAMINATION BOARD</b></td>
+                                    <td><b>13. MATRICULATION (10th CLASS) YEAR OF PASSING</b></td>
+                                    <td><b>14. MATRICULATION(10th CLASS) ROLL NO.</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Manipur Board of Secondary Education</td>
+                                    <td>2009</td>
+                                    <td>3056</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>ADDRESS DETAILS</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><b>15.1 CORRESPONDENCE ADDRESS</b></td>
+                                    <td colspan="2"><b>16.1 PERMANENT ADDRESS</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">UPOKPI MANING LEIKAI</td>
+                                    <td colspan="2">UPOKPI MANING LEIKAI</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><b>15.2 STATE</b>:Manipur</td>
+                                    <td colspan="2"><b>16.2 STATE</b>:Manipur</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><b>15.3 DISTRICT</b>:Bishnupur</td>
+                                    <td colspan="2"><b>16.3 DISTRICT</b>:Bishnupur</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><b>15.4 PIN</b>:795126</td>
+                                    <td colspan="2"><b>16.4 PIN</b>:795126</td>
+                                </tr>
+                                <tr>
+                                    <td><b>17. EMAIL</b></td>
+                                    <td>bidyandaningthoujam@gmail.com</td>
+                                    <td><b>18. MOBILE NUMBER</b></td>
+                                    <td>7630052157</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>19. HIGHEST EDUCATIONAL QUALIFICATION </b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Post Graduation</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>20. DETAILS OF QUALIFYING EDUCATIONAL QUALIFICATION </b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>20.1 EQ STATUS</b></td>
+                                    <td><b>20.2 PASSING YEAR</b></td>
+                                    <td colspan="2"><b>20.3 STATE/UT of BOARD/UNIVERSITY</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Passed</td>
+                                    <td>2012</td>
+                                    <td colspan="2">Manipur</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>20.4. NAME OF BOARD/UNIVERSITY</b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>20.5 ROLL NUMBER</b></td>
+                                    <td><b>20.6 PERCENTAGE</b></td>
+                                    <td colspan="2"><b>20.7 CGPA</b></td>
+                                </tr>
+                                <tr>
+                                    <td>3628435</td>
+                                    <td>46</td>
+                                    <td colspan="2">-</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>21. EXAMINATION CENTER</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Imphal</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>22. MEDIUM FOR COMPUTER BASED EXAMINATION(CBE):</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">English</td>
+                                </tr>
+                                <tr>
+                                    <td><b>FEE PAYMENT</b></td>
+                                    <td><b>AMOUNT</b></td>
+                                    <td><b>TRANSACTION NO</b></td>
+                                    <td><b>TRANSACTION DATE</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Paid</td>
+                                    <td>100</td>
+                                    <td>78451265875</td>
+                                    <td>10/05/2024</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4"><b>DECLARATION</b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="print-declare">1. I HAVE READ THE NOTICE OF EXAMINATION AND ACCEPT ALL THE TERMS & CONDITIONS MENTIONED THEREIN</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="print-declare">2. I KHEREBY DECLARE THAT ALL STATEMENT MADE IN THIS APPLICATION ARE TRUE, COMPLETE AND CORRECT TO THE BEST OF MY KNOWLEDGE AND BELIEF I UNDERSTAND THAT IN THE EVENT OF ANY INFORMATION BEING FOUND SUPPRESSED/FALSE or INCORRECT OR INELIGIBILITY BEING DETECTED BEFORE OR AFTER THE EXAMINATION, MY CANDIDATEURE/APPOINTMENT IS LIABLE TO BE CANCELLED I AM WILLING TO SERVE ANYWHERE IN INDIA.</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="print-declare">3. I AGREE TO AUTHORIZE HCM TO USE MY AADHAAR DATA FOR VERIFICATION PURPOSE.</td>
+                                </tr>
+                            </table><br>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="printButton">Print</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Make a payment</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="container">
+                          <div class="row payment">
+                              <div class="col-md-10">
+                                  <div>Fees Payment Mode</div>
+                              </div>
+                              <div class="col-md-2">
+                                <div>Online</div>
+                              </div>
+                              <div class="col-md-10">
+                                <div>Amount</div>
+                            </div>
+                            <div class="col-md-2">
+                              <div>100</div>
+                            </div>
+                            <div class="col-md-12 text-end mt-4">
+                              <div class="pay-btn">
+                                <a href="#" class="link-apply btn submit">Pay</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <footer class="footer mt-auto py-3  text-muted ">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="foot-banner">
+                  <div class="hcm-logo">
+                    <img src="/images/hcm_logo.png" class="logo_hcm">
+                  </div>
+                  <div class="hcm-logo-content">
+                    <div>High Court of Manipur</div>
+                    <div>Recruitment Board</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="footer-text">
+                    <div>Public Disclosure of Scores and Other Details of Non-Recommended Willing Candidates</div>
+                  </div>
+              </div>
+              <div class="col-md-2">
+                <ul class="ul-link useful">
+                  <li><span class="ul-head">Useful Links</span></li>
+                  <li>Archives</li>
+                  <li>Disclaimer</li>
+                  <li>Sitemap</li>
+                  <li>Help</li>
+                  <li>Website Policies</li>
+                  <li>Web Information Manager</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="ul-link">
+                  <li><span class="ul-head">Contact Us</span></li>
+                  <li>
+                    <span class="foot-address"><i class="fa-solid fa-location-dot"></i> High Court Complex, Mantripukhri, Chingmeirong, Imphal, Heingang, Manipur 795002</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <hr>
+        <div class="container footer-design">
+            <!-- <img src="/images/hcm_logo.png" class="logo_img" id="footer"> -->
+            <span> © 2024 <a href="https://hcmimphal.nic.in/">High Court of Manipur.</a> All Rights Reserved</span>
+        </div>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/v/bs5/dt-2.0.5/r-3.0.2/datatables.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script>
+        </script>
+    </body>
+</html>
