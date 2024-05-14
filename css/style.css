@@ -606,3 +606,8 @@ svg {
         padding: 20px;
         border: thin solid #e5e2e2;
     }
+    .card.card-header.bg-news.m-1.fw-bold.head-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
