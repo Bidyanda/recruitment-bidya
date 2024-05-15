@@ -611,3 +611,12 @@ svg {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .bg-theme{
+        background-color: #f7e1a0;
+    }
+    div.capcha {
+        background-color: #f9f5f5;
+        padding: 10px;
+        border-radius: 4px;
+    }
