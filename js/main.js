@@ -168,7 +168,7 @@ $("#product-mobile_image").change(function(){
 //     printWindow.close(); // Close the new window after printing
 // });
 $(function () {
-    $("#printButton").click(function () {
+    $(".printButton").click(function () {
         var contents = $(".tbl-print").html();
         var frame1 = $('<iframe />');
         frame1[0].name = "frame1";

@@ -127,7 +127,7 @@ form#login{
     /* width: 300px; */
     background-color: rgb(255 255 255);
     border-radius: 10px;
-    padding: 15px 10px;
+    padding: 15px 60px 0px 60px;
 }
 form#login *{
     /* font-family: 'Poppins',sans-serif; */
@@ -370,7 +370,7 @@ a.link-apply,button.link-apply {
     text-decoration: none;
     font-size: 14px;
     color: black;
-    padding: 8px 20 8px 20px;
+    padding: 5px 20 5px 20px;
     background-color: #e3c00c;
     border-radius: 21px;
     font-weight: 600;
