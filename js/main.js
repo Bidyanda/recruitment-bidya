@@ -68,27 +68,27 @@ $(".stepper-step").click(function(){
     // console.log(id+' =>'+flag);
     // return false;
     if(id == 1 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/instruction.html";
+        window.location.href = "https://recruitment.hcmdigital.in/apply/instruction.html";
     else if(id == 2 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/personal_details.html";
+        window.location.href = "https://recruitment.hcmdigital.in/apply/personal_details.html";
     else if (id == 3 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/education_details.html";
+        window.location.href = "https://recruitment.hcmdigital.in/apply/education_details.html";
     else if (id == 4 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/additional_information.html";
+        window.location.href = "https://recruitment.hcmdigital.in/apply/additional_information.html";
     else if(id == 5 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/upload_document.html";
+        window.location.href = "https://recruitment.hcmdigital.in/apply/upload_document.html";
     else if (id == 6 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/preview_form.html";
+        window.location.href = "https://recruitment.hcmdigital.in/apply/preview_form.html";
     else if (id == 7 && flag)
-        window.location.href = "http://127.0.0.1:5500/apply/declaration.html";
+        window.location.href = "https://recruitment.hcmdigital.in/apply/declaration.html";
     else if(id == 1)
-        window.location.href = "http://127.0.0.1:5500/registration/personalDetails.html";
+        window.location.href = "https://recruitment.hcmdigital.in/registration/personalDetails.html";
     else if(id == 2)
-        window.location.href = "http://127.0.0.1:5500/registration/passwordCreation.html";
+        window.location.href = "https://recruitment.hcmdigital.in/registration/passwordCreation.html";
     else if (id == 3)
-        window.location.href = "http://127.0.0.1:5500/registration/additionalDetails.html";
+        window.location.href = "https://recruitment.hcmdigital.in/registration/additionalDetails.html";
     else if (id == 4)
-        window.location.href = "http://127.0.0.1:5500/registration/declaration.html";
+        window.location.href = "https://recruitment.hcmdigital.in/registration/declaration.html";
     
 
 });
