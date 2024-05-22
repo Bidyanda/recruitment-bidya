@@ -177,7 +177,7 @@ $(function () {
         var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
         frameDoc.document.open();
         //Create a new HTML document.
-        frameDoc.document.write('<html><head><title>DIV Contents</title>');
+        frameDoc.document.write('<html><head><title>Application Form</title>');
         frameDoc.document.write('</head><body>');
         //Append the external CSS file.
         frameDoc.document.write('<link href="../css/style.css" rel="stylesheet" type="text/css" />');
